@@ -1,0 +1,75 @@
+body {
+	background: #F7F9FF;
+	margin: 0;
+}
+
+.card {
+	background-color: #FFF;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.timer {
+	text-align: center;
+	font-size: 18px;
+	color: #666;
+	line-height: 90px;
+}
+
+.timer2 {
+	font-size: 13px;
+}
+
+.timer3 {
+	font-size: 10px;
+}
+
+.timer label {
+	display: block;
+	line-height: 40px;
+	background: #EEE;
+}
+
+.timer label.s23 {
+	color: #E9936A;
+	background: rgba(233, 147, 106, 0.11);
+}
+
+.timer label.s24 {
+	color: #63A75F;
+	background: rgba(99, 167, 95, 0.11);
+}
+
+.timer label.s25 {
+	color: #B41111;
+	background: rgba(180, 17, 17, 0.11);
+}
+
+.timer span {
+	font-size: 200%;
+	margin: 0 4px 0 4px;
+	color: #5575F3;
+}
+
+.card h1{
+	text-align: center;
+	font-weight: normal;
+	font-size: 25px;
+	margin: 19px 0;
+	color: #7E9CFF;
+}
+
+.card p{
+	text-align: center;
+	font-size: 14px;
+	margin: 22px 0;
+	color: #333;
+}
