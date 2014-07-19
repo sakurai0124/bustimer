@@ -213,14 +213,14 @@ var rewrite = function(){
 
     //もし次のバスのtypeが"a"の時
     if (busList[index].type == "a") {
-        timer1_label.innerHTML = "遠藤経由　"+ busList[index].hour + ":" + busList[index].min + "発";
+        timer1_label.innerHTML = "遠藤経由　"+ busList[index].hour + ":" + ("0" + busList[index].min ).slice(-2) + "発";
         //クラスを変更をすることによって、labelの色を変える
         timer1_label.className = "s23";
     }
 
     //もし次のバスのtypeが"b"の時
     if (busList[index].type == "b") {
-        timer1_label.innerHTML = "ツインライナー　"+ busList[index].hour + ":" + busList[index].min + "発";
+        timer1_label.innerHTML = "ツインライナー　"+ busList[index].hour + ":" + ("0" + busList[index].min ).slice(-2) + "発";
         timer1_label.className = "s25";
     }
 
@@ -237,16 +237,15 @@ var rewrite = function(){
     timer1_seconds.innerHTML = ("0" + (60 - sec)%60).slice(-2);
 
 
-
     var timer2_label = document.querySelector("#timer2_label");
 
     if (busList[index+1].type == "a") {
-        timer2_label.innerHTML = "遠藤経由　"+ busList[index+1].hour + ":" + busList[index+1].min + "発";
+        timer2_label.innerHTML = "遠藤経由　"+ busList[index+1].hour + ":" + ("0" + busList[index+1].min ).slice(-2) + "発";
         timer2_label.className = "s23";
     }
 
     if (busList[index+1].type == "b") {
-        timer2_label.innerHTML = "ツインライナー　"+ busList[index+1].hour + ":" + busList[index+1].min + "発";
+        timer2_label.innerHTML = "ツインライナー　"+ busList[index+1].hour + ":" + ("0" + busList[index+1].min ).slice(-2) + "発";
         timer2_label.className = "s25";
     }
 
